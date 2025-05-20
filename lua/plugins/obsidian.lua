@@ -19,7 +19,7 @@ return {
     workspaces = {
       {
         name = "main",
-        path = "~/vault",
+        path = "~/cynote",
       },
       --      {
       --        name = "work",
