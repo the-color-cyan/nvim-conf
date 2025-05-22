@@ -18,7 +18,7 @@ return {
   opts = {
     workspaces = {
       {
-        name = "main",
+        name = "cynote",
         path = "~/cynote",
       },
       --      {
