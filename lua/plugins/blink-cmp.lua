@@ -1,5 +1,5 @@
 return {
-  'saghen/blink.cmp',
+  "saghen/blink.cmp",
   ---@module 'blink.cmp'
   ---@type blink.cmp.Config
   opts = {
