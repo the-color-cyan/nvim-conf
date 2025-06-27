@@ -34,6 +34,9 @@ map("i", "<A-Up>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move Up" })
 map("v", "<A-Down>", ":<C-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv", { desc = "Move Down" })
 map("v", "<A-Up>", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", { desc = "Move Up" })
 
+-- claude-code
+map("n", "<leader>ct", "<cmd>ClaudeCode<CR>", { desc = "Claude Code" })
+
 -- vscode keymaps
 if vim.g.vscode then
     -- general keymaps
