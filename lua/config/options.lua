@@ -7,4 +7,8 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.scrolloff = 10
 
+-- markdown-preview
 vim.g.mkdp_port = 6969
+
+-- blink-cmp allow supermaven completions on newline, tab, and space
+vim.g.ai_cmp = false
