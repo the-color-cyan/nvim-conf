@@ -11,4 +11,4 @@ vim.opt.scrolloff = 10
 vim.g.mkdp_port = 6969
 
 -- blink-cmp allow supermaven completions on newline, tab, and space
--- vim.g.ai_cmp = false
+vim.g.ai_cmp = false
