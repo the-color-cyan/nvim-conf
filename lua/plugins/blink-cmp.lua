@@ -1,4 +1,4 @@
---[[ 
+--[[
 if true then
     return {}
 end
@@ -6,6 +6,7 @@ end
 
 return {
     "saghen/blink.cmp",
+    enabled = false,
     dependencies = { "saghen/blink.compat" },
     opts = {
         keymap = {
