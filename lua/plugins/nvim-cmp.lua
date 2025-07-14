@@ -16,9 +16,9 @@ return {
 			end,
 
 			-- Tab only handles snippet_forward and not ai_accept
-			["<Tab>"] = cmp.mapping(function(fallback)
+			["<tab>"] = function(fallback)
 				return LazyVim.cmp.map({ "snippet_forward" }, fallback)()
-			end),
-		}),
+			end
+		},
 	},
 }
