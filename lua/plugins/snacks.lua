@@ -68,5 +68,12 @@ return {
 				{ section = "startup" },
 			},
 		},
+
+		zen = {
+			show = {
+				statusline = false,
+				tabline = false,
+			},
+		},
 	},
 }
