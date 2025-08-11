@@ -74,6 +74,17 @@ return {
 				statusline = false,
 				tabline = false,
 			},
+			win = {
+				width = 120,
+			},
+		},
+		styles = {
+			zen = {
+				backdrop = {
+					transparent = true,
+					blend = 20,
+				},
+			},
 		},
 	},
 }
