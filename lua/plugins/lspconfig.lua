@@ -13,10 +13,10 @@ return {
 	}),
 	opts = {
 		servers = {
-			omnisharp = {
-				mason = false,
-				enabled = false,
-			},
+			-- omnisharp = {
+			-- 	mason = false,
+			-- 	enabled = false,
+			-- },
 			nil_ls = {
 				mason = false,
 				enabled = not is_win(),
