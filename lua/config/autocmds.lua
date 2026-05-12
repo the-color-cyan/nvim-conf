@@ -9,6 +9,15 @@
 
 vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 
+-- overwrite tab spacing for F# files
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "fsharp",
+	callback = function(args)
+		vim.bo[args.buf].tabstop = 4
+		vim.bo[args.buf].shiftwidth = 4
+	end,
+})
+
 local f = require("config.functions")
 Rustfmt_Cache = {}
 -- rust file tabstop and shiftwidth formatting passed in by rustfmt
