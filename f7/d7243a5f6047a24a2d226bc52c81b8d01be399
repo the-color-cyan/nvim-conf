@@ -1,0 +1,19 @@
+lua/plugins/cursortab.lua
+  s_de8d564108ed26::t_2d3f58c260dd68 13,23-40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "f7d7243a5f6047a24a2d226bc52c81b8d01be399",
+  "prompts": {},
+  "sessions": {
+    "s_de8d564108ed26": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019e293f-a0f2-726f-819f-2c1faae9697b",
+        "model": "gpt-5.5"
+      },
+      "human_author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
