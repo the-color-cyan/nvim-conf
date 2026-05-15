@@ -1,0 +1,19 @@
+lua/plugins/refactoring.lua
+  s_1851c25f3cdba8::t_69164dc023dc49 1-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "4a543e47e3c15e0129d89a9982c25f0301838fb7",
+  "prompts": {},
+  "sessions": {
+    "s_1851c25f3cdba8": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019e291b-2e9a-71d9-87db-77a825c72b79",
+        "model": "gpt-5.5"
+      },
+      "human_author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
