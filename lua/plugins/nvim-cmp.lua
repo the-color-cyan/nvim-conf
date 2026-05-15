@@ -20,14 +20,15 @@ return {
 				fallback()
 			end,
 
-			-- Tab only handles snippet_forward and not ai_accept
+			-- Tab completes the selected cmp item, then falls back to snippets, then a literal tab.
 			["<Tab>"] = function(fallback)
 				local luasnip = require("luasnip")
-				local rawtab = vim.api.nvim_replace_termcodes("<Tab>", true, false, true)
-				if luasnip.expand_or_jumpable() then
+				if cmp.visible() then
+					cmp.confirm({ select = true })
+				elseif luasnip.expand_or_jumpable() then
 					luasnip.expand_or_jump()
 				else
-					vim.api.nvim_feedkeys(rawtab, "n", false)
+					fallback()
 				end
 			end,
 
