@@ -1,0 +1,24 @@
+lua/plugins/supermaven.lua
+  s_de8d564108ed26::t_c0a57b587208c3 1-9
+lua/plugins/nvim-cmp.lua
+  s_de8d564108ed26::t_48e0a167849857 23,26-28,31
+lua/plugins/cursortab.lua
+  s_de8d564108ed26::t_97195663a9edef 11-14,30-43
+  s_de8d564108ed26::t_f7d16521577698 16-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "6fedcc22b1a065a525aed0e87b8d7151c1f4ded8",
+  "prompts": {},
+  "sessions": {
+    "s_de8d564108ed26": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019e293f-a0f2-726f-819f-2c1faae9697b",
+        "model": "gpt-5.5"
+      },
+      "human_author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
