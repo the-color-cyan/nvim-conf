@@ -10,9 +10,13 @@ return {
 		keymaps = {
 			accept = "<Tab>",
 			partial_accept = "<S-Tab>",
-			trigger = false,
+			trigger = "<C-CR>",
 		},
 		behavior = {
+			-- On-demand only: completions appear when manually triggered.
+			text_change_debounce = -1,
+			idle_completion_delay = -1,
+			enabled_modes = {},
 			ignore_filetypes = { "", "terminal", "bigfile", "snacks_input", "snacks_notif" },
 		},
 	},
