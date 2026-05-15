@@ -16,6 +16,32 @@ return {
 			cmd = { "nil" },
 		})
 
+		-- TypeScript / JavaScript - prefer system/Nix vtsls, fall back to Mason
+		local vtsls = vim.fn.exepath("vtsls")
+		if vtsls == "" then
+			vtsls = vim.fn.stdpath("data") .. "/mason/bin/vtsls"
+		end
+
+		lspconfig.vtsls.setup({
+			cmd = { vtsls, "--stdio" },
+			filetypes = {
+				"javascript",
+				"javascriptreact",
+				"javascript.jsx",
+				"typescript",
+				"typescriptreact",
+				"typescript.tsx",
+			},
+			settings = {
+				vtsls = {
+					autoUseWorkspaceTsdk = true,
+				},
+				typescript = {
+					updateImportsOnFileMove = { enabled = "always" },
+				},
+			},
+		})
+
 		-- rust - system binary
 		-- lspconfig.rust_analyzer.setup({
 		-- 	cmd = { "rust-analyzer" },
