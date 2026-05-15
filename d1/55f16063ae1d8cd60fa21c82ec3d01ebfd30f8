@@ -1,0 +1,19 @@
+lua/plugins/lspconfig.lua
+  s_b8991262aeed4f::t_c3d498bf18ef81 19-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "d155f16063ae1d8cd60fa21c82ec3d01ebfd30f8",
+  "prompts": {},
+  "sessions": {
+    "s_b8991262aeed4f": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019e29c7-5f84-7427-b0e9-dc4c34a6c0c1",
+        "model": "gpt-5.5"
+      },
+      "human_author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
