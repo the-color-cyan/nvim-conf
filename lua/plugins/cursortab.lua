@@ -10,7 +10,7 @@ return {
 		keymaps = {
 			accept = "<Tab>",
 			partial_accept = "<S-Tab>",
-			trigger = false,
+			trigger = "<C-CR>",
 		},
 		behavior = {
 			-- On-demand only: completions appear when manually triggered.
@@ -20,22 +20,4 @@ return {
 			ignore_filetypes = { "", "terminal", "bigfile", "snacks_input", "snacks_notif" },
 		},
 	},
-	config = function(_, opts)
-		require("cursortab").setup(opts)
-
-		local function trigger_completion()
-			require("cursortab.daemon").send_event_immediate("trigger_completion")
-		end
-
-		vim.keymap.set({ "i", "n" }, "<C-CR>", trigger_completion, {
-			desc = "Trigger CursorTab completion",
-			noremap = true,
-			silent = true,
-		})
-		vim.keymap.set({ "i", "n" }, "<C-Enter>", trigger_completion, {
-			desc = "Trigger CursorTab completion",
-			noremap = true,
-			silent = true,
-		})
-	end,
 }
