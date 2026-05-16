@@ -1,0 +1,29 @@
+lua/plugins/lspconfig.lua
+  s_127e65af336125::t_61a730b2c5d9bc 2,12-25
+lua/plugins/mason-lspconfig.lua
+  s_4f3ec7de255bcc::t_e825688922fd49 3-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "d5aef3e7131275e6e6647c9c0451ba5eaa2bae2e",
+  "prompts": {},
+  "sessions": {
+    "s_127e65af336125": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019e3307-c03c-7623-8130-81c3dd5626b9",
+        "model": "gpt-5.5"
+      },
+      "human_author": "cyan <cyan@cyan.fish>"
+    },
+    "s_4f3ec7de255bcc": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019e32f9-c6f4-7510-b81b-e8066b3519a2",
+        "model": "gpt-5.5"
+      },
+      "human_author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
