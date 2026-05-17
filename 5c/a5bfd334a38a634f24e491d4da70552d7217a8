@@ -1,0 +1,19 @@
+lua/plugins/snacks.lua
+  s_35d57846c89c29::t_854804eb3b563a 39-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "5ca5bfd334a38a634f24e491d4da70552d7217a8",
+  "prompts": {},
+  "sessions": {
+    "s_35d57846c89c29": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019e337f-84fb-7658-ae16-a3a32a94aa6a",
+        "model": "gpt-5.5"
+      },
+      "human_author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
