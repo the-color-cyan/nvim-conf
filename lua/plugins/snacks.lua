@@ -36,13 +36,10 @@ return {
 				{
 					pane = 2,
 					section = "terminal",
-					cmd = (function()
-						if vim.fn.has("unix") == 1 then
-							return "colorscript -e square"
-						elseif vim.fn.has("win32") == 1 then
-							return 'powershell -NoProfile -Command "Show-ColorScript -Name square"'
-						end
-					end)(),
+					enabled = function()
+						return vim.fn.executable("colorscript") == 1
+					end,
+					cmd = "colorscript -e square",
 					height = 5,
 					padding = 5,
 				},

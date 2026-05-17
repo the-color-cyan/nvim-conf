@@ -20,3 +20,6 @@ vim.diagnostic.config({
 	underline = true,
 	update_in_insert = false,
 })
+
+-- termius compatibility
+vim.opt.guicursor = ""
